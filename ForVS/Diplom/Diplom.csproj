@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3075D35-D282-47A7-BFE7-0D1653FC04CC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Diplom</RootNamespace>
+    <AssemblyName>Diplom</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.xaml.cs">
+      <DependentUpon>Admin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Authentication.xaml.cs">
+      <DependentUpon>Authentication.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\GameNum\Level1\Level1-2.xaml.cs">
+      <DependentUpon>Level1-2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\GameNum\Level1\Level1-3.xaml.cs">
+      <DependentUpon>Level1-3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\GameNum\Level1\Level1.xaml.cs">
+      <DependentUpon>Level1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\GameNum\Level2\Level2-2.xaml.cs">
+      <DependentUpon>Level2-2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\GameNum\Level2\Level2-3.xaml.cs">
+      <DependentUpon>Level2-3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\GameNum\Level2\Level2.xaml.cs">
+      <DependentUpon>Level2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\GameNum\Level3\Level3-2.xaml.cs">
+      <DependentUpon>Level3-2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\GameNum\Level3\Level3-3.xaml.cs">
+      <DependentUpon>Level3-3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\GameNum\Level3\Level3.xaml.cs">
+      <DependentUpon>Level3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\GamePod\Level1\Level1-2.xaml.cs">
+      <DependentUpon>Level1-2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\GamePod\Level1\Level1-3.xaml.cs">
+      <DependentUpon>Level1-3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\GamePod\Level1\Level1.xaml.cs">
+      <DependentUpon>Level1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\GamePod\Level2\Level2-2.xaml.cs">
+      <DependentUpon>Level2-2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\GamePod\Level2\Level2-3.xaml.cs">
+      <DependentUpon>Level2-3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\GamePod\Level2\Level2.xaml.cs">
+      <DependentUpon>Level2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\List1.xaml.cs">
+      <DependentUpon>List1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\List2.xaml.cs">
+      <DependentUpon>List2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\ListOther.xaml.cs">
+      <DependentUpon>ListOther.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\Snake\Circle.cs" />
+    <Compile Include="Games\Snake\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Games\Snake\Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Games\Snake\Input.cs" />
+    <Compile Include="Games\Snake\Settings.cs" />
+    <Compile Include="Games\Tetris\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm.Designer.cs">
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
+    <Page Include="About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Authentication.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Games\GameNum\Level1\Level1-2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Games\GameNum\Level1\Level1-3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Games\GameNum\Level1\Level1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Games\GameNum\Level2\Level2-2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Games\GameNum\Level2\Level2-3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Games\GameNum\Level2\Level2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Games\GameNum\Level3\Level3-2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Games\GameNum\Level3\Level3-3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Games\GameNum\Level3\Level3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Games\GamePod\Level1\Level1-2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Games\GamePod\Level1\Level1-3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Games\GamePod\Level1\Level1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Games\GamePod\Level2\Level2-2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Games\GamePod\Level2\Level2-3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Games\GamePod\Level2\Level2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Games\List1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Games\List2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Games\ListOther.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Games\Tetris\MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Settings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Games\Snake\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm.resx">
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interface\cube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interface\cube2.png" />
+    <Resource Include="Interface\cube3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interface\button 1.png" />
+    <Resource Include="Interface\button 2.png" />
+    <Resource Include="Interface\button 3.png" />
+    <Resource Include="Interface\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interface\on-off-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interface\treugolnik1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interface\part1.jpg" />
+    <Resource Include="Interface\part2.jpg" />
+    <Resource Include="Interface\part3.jpg" />
+    <Resource Include="Interface\part4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interface\f30e13dda67413e38d9dec087e89d3ed.png" />
+    <Resource Include="Interface\cubesiki.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interface\Podz2-2.png" />
+    <Resource Include="Interface\Podz1-1.png" />
+    <Resource Include="Games\GameNum\Pictures\2krug.png" />
+    <Resource Include="Games\GameNum\Pictures\3treug.png" />
+    <Resource Include="Games\GameNum\Pictures\4kvadr.png" />
+    <Resource Include="Games\GamePod\Pictures\1-1.png" />
+    <Resource Include="Games\GamePod\Pictures\1-2.png" />
+    <Resource Include="Games\GamePod\Pictures\1-3.png" />
+    <Resource Include="Games\GamePod\Pictures\1-4.png" />
+    <Resource Include="Games\GamePod\Pictures\1-5.png" />
+    <Resource Include="Games\GamePod\Pictures\1-6.png" />
+    <Resource Include="Games\GamePod\Pictures\1-7.png" />
+    <Resource Include="Games\GamePod\Pictures\1-8.png" />
+    <Resource Include="Games\GamePod\Pictures\1-9.png" />
+    <Resource Include="Games\GameNum\Pictures\2-1.png" />
+    <Resource Include="Games\GameNum\Pictures\2-2.png" />
+    <Resource Include="Games\GameNum\Pictures\2-3.png" />
+    <Resource Include="Games\GameNum\Pictures\3-1.png" />
+    <Resource Include="Games\GameNum\Pictures\3-2.png" />
+    <Resource Include="Games\GameNum\Pictures\3-3.png" />
+    <Resource Include="Games\GamePod\Pictures\2-1.png" />
+    <Resource Include="Games\GamePod\Pictures\2-2.png" />
+    <Resource Include="Games\GamePod\Pictures\2-3.png" />
+    <Resource Include="Games\GamePod\Pictures\2-4.png" />
+    <Resource Include="Games\GamePod\Pictures\2-5.png" />
+    <Resource Include="Games\GamePod\Pictures\2-6.png" />
+    <Resource Include="Games\GamePod\Pictures\2-7.png" />
+    <Resource Include="Games\GamePod\Pictures\2-8.png" />
+    <Resource Include="Games\GamePod\Pictures\2-9.png" />
+    <Content Include="Games\Snake\Snake.csproj" />
+    <Content Include="Interface\GeometricWow.mp3" />
+    <None Include="Resources\deleteLine.wav" />
+    <None Include="Resources\collided.wav" />
+    <Resource Include="Interface\pause.png" />
+    <Resource Include="Interface\play.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

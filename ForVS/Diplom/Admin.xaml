@@ -1,0 +1,32 @@
+﻿<Window x:Class="Diplom.Admin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diplom"
+        mc:Ignorable="d"
+        Height="300.386" Width="600"
+        WindowStyle="None" AllowsTransparency="True" Cursor="Arrow" MouseLeftButtonDown="Grid_MouseLeftButtonDown" >
+    <Window.Background>
+        <ImageBrush ImageSource="Interface/cube.png"></ImageBrush>
+    </Window.Background>
+
+    <!-- Главное меню -->
+    <Grid Cursor="Arrow" MouseLeftButtonDown="Grid_MouseLeftButtonDown">
+        <Button Content="Начать" HorizontalAlignment="Left" Margin="160,55,0,0" VerticalAlignment="Top" Width="288" Click="Button_Click_1" Cursor="Hand" Height="67" FontFamily="Arial" FontSize="16" FontWeight="Bold" BorderBrush="#FF3D7C7B">
+            <Button.Background>
+                <ImageBrush ImageSource="Interface/button 1.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="268,213,0,0" VerticalAlignment="Top" Width="70" Click="Button_Click" Cursor="Hand" Height="67" BorderBrush="#FF3D7C7B">
+            <Button.Background>
+                <ImageBrush ImageSource="Interface/on-off-button.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Настройки" HorizontalAlignment="Left" Margin="160,133,0,0" VerticalAlignment="Top" Width="288" Click="Button_Click_2" Cursor="Hand" Height="67" FontFamily="Arial" FontSize="16" FontWeight="Bold" BorderBrush="#FF3D7C7B">
+            <Button.Background>
+                <ImageBrush ImageSource="Interface/button 2.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

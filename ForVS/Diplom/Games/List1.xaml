@@ -1,0 +1,54 @@
+﻿<Window x:Class="Diplom.Games.List1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diplom.Games"
+        mc:Ignorable="d"
+        Height="156" Width="275.078" WindowStyle="ToolWindow">
+    <Window.Background>
+        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+    </Window.Background>
+    <Grid>
+        
+        <Button Content="1 уровень" Width="215" BorderBrush="#FF74A5B1" FontSize="14" Click="Button_Click" Margin="19,10,19.6,80.8" Cursor="Hand">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.GradientActiveCaptionColorKey}}"/>
+            </Button.Background>
+            <Button.ToolTip>
+                <ToolTip Width="350" Height="200">
+                    <StackPanel>
+                        <Image Source="/Diplom;component/Interface/Podz1-1.png"/>
+                    </StackPanel>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+        
+        <Button Content="2 уровень" Width="215" BorderBrush="#FF74A5B1" FontSize="14" Click="Button_Click_1" Margin="19,45,19.6,45.8" Cursor="Hand">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.GradientActiveCaptionColorKey}}"/>
+            </Button.Background>
+            <Button.ToolTip>
+                <ToolTip Width="350" Height="200">
+                    <StackPanel>
+                        <Image Source="/Diplom;component/Interface/Podz1-1.png"/>
+                    </StackPanel>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+       
+        <Button Content="3 уровень" Width="215" BorderBrush="#FF74A5B1" FontSize="14" Click="Button_Click_2" Margin="19,80,19.6,10.8" Cursor="Hand">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.GradientActiveCaptionColorKey}}"/>
+            </Button.Background>
+            <Button.ToolTip>
+                <ToolTip Width="350" Height="200">
+                    <StackPanel>
+                        <Image Source="/Diplom;component/Interface/Podz1-1.png"/>
+                    </StackPanel>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+        
+    </Grid>
+</Window>

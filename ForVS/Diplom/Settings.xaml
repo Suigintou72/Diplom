@@ -1,0 +1,40 @@
+﻿<Window x:Class="Diplom.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diplom"
+        mc:Ignorable="d"
+        Title="Настройки" Height="288" Width="600"
+        WindowStyle="None" AllowsTransparency="True" Cursor="Arrow" MouseLeftButtonDown="Grid_MouseLeftButtonDown" Loaded="Window_Loaded" 
+        >
+    <Window.Background>
+        <ImageBrush ImageSource="Interface/cube2.png"></ImageBrush>
+    </Window.Background>
+
+    <Grid>
+        <!-- Настройка музыки -->
+        <Slider Margin="187,155,86,109" Name="sliderVolume" ValueChanged="SliderVolume_ValueChanged" Minimum="0" Maximum="1" Value="0.5" Foreground="{x:Null}" BorderBrush="{x:Null}" Cursor="Hand" />
+        <Button Content="" HorizontalAlignment="Left" Margin="201,69,0,0" VerticalAlignment="Top" Width="60" Height="60" Click="Button_Click_4" Cursor="Hand" BorderBrush="#FF3D7C7B">
+            <Button.Background>
+                <ImageBrush ImageSource="Interface/play.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="344,69,0,0" VerticalAlignment="Top" Width="60" Height="60" Click="Button_Click_5" Cursor="Hand" BorderBrush="#FF3D7C7B">
+            <Button.Background>
+                <ImageBrush ImageSource="Interface/f30e13dda67413e38d9dec087e89d3ed.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="272,69,0,0" VerticalAlignment="Top" Width="60" Height="60" Click="Button_Click_6" Cursor="Hand" BorderBrush="#FF3D7C7B">
+            <Button.Background>
+                <ImageBrush ImageSource="Interface/pause.png"/>
+            </Button.Background>
+        </Button>
+        <Label Content="Громкость:" HorizontalAlignment="Left" Margin="91,148,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" BorderBrush="#FF3D7C7B"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="267,200,0,0" VerticalAlignment="Top" Width="70" Click="Button_Click" Cursor="Hand" Height="67" BorderBrush="#FF3D7C7B">
+            <Button.Background>
+                <ImageBrush ImageSource="Interface/on-off-button.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

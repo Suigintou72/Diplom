@@ -1,0 +1,24 @@
+﻿<Window x:Class="Diplom.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diplom"
+        mc:Ignorable="d"
+        Title="" Height="485.052" Width="300" WindowStyle="None" AllowsTransparency="True" Cursor="Arrow">
+    <Window.Background>
+        <ImageBrush ImageSource="Interface/cube3.png"></ImageBrush>
+    </Window.Background>
+    <Grid>
+        <Label VerticalContentAlignment="Center" Margin="10,0,4,64.8" FontFamily="Segoe UI Light" FontSize="14" FontWeight="Bold" MouseLeftButtonDown="Label_MouseLeftButtonDown">
+            <Label.Content>
+                <TextBlock TextWrapping="Wrap" Height="271" Width="275" FontSize="18" FontWeight="Normal" FontFamily="Segoe UI" FontStyle="Italic">Привет! Я развивающая программа. Для того, чтобы начать играть, нажми в главном меню кнопку "Начать" Откроется список доступных игр с поисковой строкой. Примечание: в списке уровней какой-либо игры(кроме "Моторика") при наведении на кнопку какого-либо уровня всплывает подсказка.</TextBlock>
+            </Label.Content>
+        </Label>
+        <Button Cursor="Hand" BorderBrush="#FF3D7C7B" Click="Button_Click" Margin="120,394,127,38.8" RenderTransformOrigin="0.477,0.337">
+            <Button.Background>
+                <ImageBrush ImageSource="Interface/on-off-button.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

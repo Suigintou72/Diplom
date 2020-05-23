@@ -1,0 +1,20 @@
+﻿<Window x:Class="Diplom.Games.GameNum.Level2.Level2_2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Diplom.Games.GameNum.Level2"
+        mc:Ignorable="d"
+        Height="625.2" Width="600" WindowStyle="ToolWindow">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Name="textBox1" Height="29" Margin="146,485,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" KeyDown="TextBox1_KeyDown" FontSize="16"/>
+        <Button Content="Проверить" HorizontalAlignment="Left" Margin="242,538,0,0" VerticalAlignment="Top" Width="113" Click="Button_Click" FontSize="18" Height="36"/>
+        <Label Content="Сколько всего КВАДРАТОВ указано на картинке?" HorizontalAlignment="Left" Margin="110,434,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="400" Margin="151,10,0,0" VerticalAlignment="Top" Width="300">
+            <Border.BorderBrush>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkDarkColorKey}}"/>
+            </Border.BorderBrush>
+            <Image HorizontalAlignment="Left" Height="400" Margin="0,0,0,0" VerticalAlignment="Top" Width="300" Source="/Diplom;component/Games/GameNum/Pictures/2-2.png"/>
+        </Border>
+    </Grid>
+</Window>
